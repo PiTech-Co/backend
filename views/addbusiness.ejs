@@ -1,0 +1,25 @@
+<p class="lead mb-3">Add Residence</p>
+
+<form action="/users/addbusiness" method="POST">
+    <div class="form-group">
+      <label for="Business_name">Name</label>
+      <input
+        type="name"
+        id="Business_name"
+        name="Business_name"
+        class="form-control"
+        placeholder="Enter Name"
+        value="<%= typeof Business_name != 'undefined' ? Business_name : '' %>"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">
+       Register
+     </button>
+</form>
+
+
+
+
+
+
+<a href="/users/logout" class="btn btn-secondary">Logout</a>

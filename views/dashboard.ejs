@@ -1,0 +1,26 @@
+
+
+
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Add Residence</p>
+
+<form action="/users/dashboard" method="POST">
+    <div class="form-group">
+      <label for="Residence_name">Name</label>
+      <input
+        type="name"
+        id="Residence_name"
+        name="Residence_name"
+        class="form-control"
+        placeholder="Enter Name"
+        value="<%= typeof Residence_name != 'undefined' ? Residence_name : '' %>"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">
+       Register
+     </button>
+</form>
+
+
+<a href="/addbusiness" class="btn btn-secondary">Add business</a><br>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
